@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import Projects from './components/Projects';
 import Education from './components/Education';
+import Blog from './components/Blog';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Services />
       <Projects />
       <Education />
+      <Blog />
       {/* Fallback height to simulate scrollable content for now */}
       <div className="h-[200vh]"></div>
     </div>
