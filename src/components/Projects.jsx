@@ -22,12 +22,12 @@ export default function Projects() {
 
     const getTechClasses = (techName) => {
         const map = {
-            "React": "bg-blue-500/10 text-blue-400 border-blue-500/20",
-            "Node.js": "bg-green-500/10 text-green-400 border-green-500/20",
-            "MongoDB": "bg-yellow-500/10 text-yellow-400 border-yellow-500/20",
-            "Tailwind": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-            "Next.js": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-            "Socket.io": "bg-red-500/10 text-red-400 border-red-500/20"
+            "React": "tag-blue",
+            "Node.js": "tag-green",
+            "MongoDB": "tag-yellow",
+            "Tailwind": "tag-cyan",
+            "Next.js": "tag-purple",
+            "Socket.io": "tag-red"
         };
         return map[techName] || "bg-gray-500/10 text-gray-400 border-gray-500/20";
     };

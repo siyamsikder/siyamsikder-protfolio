@@ -5,28 +5,28 @@ export default function Services() {
             title: "Database Design",
             description: "Optimized database schemas using MongoDB. Ensuring data integrity, scalability, and performance.",
             icon: "database",
-            colorClass: "bg-blue-500/20 text-blue-400"
+            colorClass: "icon-blue"
         },
         {
             id: "02",
             title: "API Development",
             description: "Robust RESTful APIs with Node.js & Express. Secure authentication (JWT) and efficient endpoints.",
             icon: "plugs-connected",
-            colorClass: "bg-purple-500/20 text-purple-400"
+            colorClass: "icon-purple"
         },
         {
             id: "03",
             title: "Frontend Dev",
             description: "Responsive interaction using React.js. Modern animations and intuitive UX.",
             icon: "browser",
-            colorClass: "bg-cyan-500/20 text-cyan-400"
+            colorClass: "icon-cyan"
         },
         {
             id: "04",
             title: "Backend Dev",
             description: "Server-side logic and integration. High-performance microservices and cloud deployment.",
             icon: "server",
-            colorClass: "bg-green-500/20 text-green-400"
+            colorClass: "icon-green"
         }
     ];
 
