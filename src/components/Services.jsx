@@ -1,32 +1,32 @@
 export default function Services() {
     const services = [
         {
-            id: '01',
-            title: 'Database Design',
-            description: 'Optimized database schemas using MongoDB. Ensuring data integrity, scalability, and performance.',
-            icon: 'database',
-            color: 'blue'
+            id: "01",
+            title: "Database Design",
+            description: "Optimized database schemas using MongoDB. Ensuring data integrity, scalability, and performance.",
+            icon: "database",
+            colorClass: "bg-blue-500/20 text-blue-400"
         },
         {
-            id: '02',
-            title: 'API Development',
-            description: 'Robust RESTful APIs with Node.js & Express. Secure authentication (JWT) and efficient endpoints.',
-            icon: 'plugs-connected',
-            color: 'purple'
+            id: "02",
+            title: "API Development",
+            description: "Robust RESTful APIs with Node.js & Express. Secure authentication (JWT) and efficient endpoints.",
+            icon: "plugs-connected",
+            colorClass: "bg-purple-500/20 text-purple-400"
         },
         {
-            id: '03',
-            title: 'Frontend Dev',
-            description: 'Responsive interaction using React.js. Modern animations and intuitive UX.',
-            icon: 'browser',
-            color: 'cyan'
+            id: "03",
+            title: "Frontend Dev",
+            description: "Responsive interaction using React.js. Modern animations and intuitive UX.",
+            icon: "browser",
+            colorClass: "bg-cyan-500/20 text-cyan-400"
         },
         {
-            id: '04',
-            title: 'Backend Dev',
-            description: 'Server-side logic and integration. High-performance microservices and cloud deployment.',
-            icon: 'server',
-            color: 'green'
+            id: "04",
+            title: "Backend Dev",
+            description: "Server-side logic and integration. High-performance microservices and cloud deployment.",
+            icon: "server",
+            colorClass: "bg-green-500/20 text-green-400"
         }
     ];
 
@@ -44,7 +44,7 @@ export default function Services() {
                             <div className="text-6xl font-bold text-white/5 absolute top-4 right-6 group-hover:text-white/10 transition-colors">
                                 {service.id}
                             </div>
-                            <div className={`w-14 h-14 rounded-xl bg-${service.color}-500/20 flex items-center justify-center text-${service.color}-400 text-3xl mb-6 group-hover:scale-110 transition-transform`}>
+                            <div className={`w-14 h-14 rounded-xl ${service.colorClass} flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform`}>
                                 <i className={`ph-fill ph-${service.icon}`}></i>
                             </div>
                             <h4 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">

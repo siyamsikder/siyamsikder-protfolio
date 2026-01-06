@@ -7,15 +7,15 @@ export default function Footer() {
                 </a>
                 <div className="flex justify-center gap-6 mb-8">
                     {[
-                        { icon: 'github-logo', color: 'primary' },
-                        { icon: 'linkedin-logo', color: 'blue-600' },
-                        { icon: 'twitter-logo', color: 'sky-500' },
-                        { icon: 'instagram-logo', color: 'pink-600' }
+                        { icon: 'github-logo', hoverClass: 'hover:bg-primary' },
+                        { icon: 'linkedin-logo', hoverClass: 'hover:bg-blue-600' },
+                        { icon: 'twitter-logo', hoverClass: 'hover:bg-sky-500' },
+                        { icon: 'instagram-logo', hoverClass: 'hover:bg-pink-600' }
                     ].map((item, idx) => (
                         <a
                             key={idx}
                             href="#"
-                            className={`w-10 h-10 rounded-full glass-card flex items-center justify-center text-slate-400 hover:text-white hover:bg-${item.color} transition-all duration-300`}
+                            className={`w-10 h-10 rounded-full glass-card flex items-center justify-center text-slate-400 hover:text-white ${item.hoverClass} transition-all duration-300`}
                         >
                             <i className={`ph-fill ph-${item.icon}`}></i>
                         </a>

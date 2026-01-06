@@ -1,38 +1,35 @@
 export default function Projects() {
     const projects = [
         {
-            title: 'Neon E-Commerce',
-            description: 'A full-stack e-commerce platform with stripe payment integration and admin dashboard.',
-            tech: ['React', 'Node.js', 'MongoDB'],
-            colors: { react: 'blue', node: 'green', mongo: 'yellow' },
-            image: 'https://images.unsplash.com/photo-1557821552-17105176677c?fit=crop&w=800&q=80'
+            title: "Neon E-Commerce",
+            description: "A full-stack e-commerce platform with stripe payment integration and admin dashboard.",
+            tech: ["React", "Node.js", "MongoDB"],
+            image: "https://images.unsplash.com/photo-1557821552-17105176677c?fit=crop&w=800&q=80"
         },
         {
-            title: 'Analytics Dashboard',
-            description: 'Real-time data visualization dashboard with dark mode and customizable widgets.',
-            tech: ['Tailwind', 'Next.js'],
-            colors: { tailwind: 'cyan', next: 'purple' },
-            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?fit=crop&w=800&q=80'
+            title: "Analytics Dashboard",
+            description: "Real-time data visualization dashboard with dark mode and customizable widgets.",
+            tech: ["Tailwind", "Next.js"],
+            image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?fit=crop&w=800&q=80"
         },
         {
-            title: 'Chat Application',
-            description: 'Real-time messaging app with group chats, file sharing, and end-to-end encryption.',
-            tech: ['Socket.io', 'React'],
-            colors: { socket: 'red', react: 'blue' },
-            image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?fit=crop&w=800&q=80'
+            title: "Chat Application",
+            description: "Real-time messaging app with group chats, file sharing, and end-to-end encryption.",
+            tech: ["Socket.io", "React"],
+            image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?fit=crop&w=800&q=80"
         }
     ];
 
-    const getTechColor = (techName) => {
+    const getTechClasses = (techName) => {
         const map = {
-            'React': 'blue',
-            'Node.js': 'green',
-            'MongoDB': 'yellow',
-            'Tailwind': 'cyan',
-            'Next.js': 'purple',
-            'Socket.io': 'red'
+            "React": "bg-blue-500/10 text-blue-400 border-blue-500/20",
+            "Node.js": "bg-green-500/10 text-green-400 border-green-500/20",
+            "MongoDB": "bg-yellow-500/10 text-yellow-400 border-yellow-500/20",
+            "Tailwind": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
+            "Next.js": "bg-purple-500/10 text-purple-400 border-purple-500/20",
+            "Socket.io": "bg-red-500/10 text-red-400 border-red-500/20"
         };
-        return map[techName] || 'gray';
+        return map[techName] || "bg-gray-500/10 text-gray-400 border-gray-500/20";
     };
 
     return (
@@ -53,22 +50,15 @@ export default function Projects() {
                         <div key={index} className="group relative rounded-2xl overflow-hidden glass-card">
                             <div className="relative h-64 overflow-hidden">
                                 <div className="absolute inset-0 bg-dark/20 group-hover:bg-dark/0 transition-colors z-10"></div>
-                                <img
-                                    src={project.image}
-                                    alt={project.title}
-                                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                                />
+                                <img src={project.image} alt={project.title} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
                             </div>
                             <div className="p-6">
                                 <div className="flex gap-2 mb-4 flex-wrap">
-                                    {project.tech.map((t) => {
-                                        const color = getTechColor(t);
-                                        return (
-                                            <span key={t} className={`px-3 py-1 text-xs rounded-full bg-${color}-500/10 text-${color}-400 border border-${color}-500/20`}>
-                                                {t}
-                                            </span>
-                                        );
-                                    })}
+                                    {project.tech.map((t) => (
+                                        <span key={t} className={`px-3 py-1 text-xs rounded-full border ${getTechClasses(t)}`}>
+                                            {t}
+                                        </span>
+                                    ))}
                                 </div>
                                 <h4 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
                                     {project.title}

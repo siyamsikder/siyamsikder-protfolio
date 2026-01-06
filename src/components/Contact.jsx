@@ -50,12 +50,12 @@ export default function Contact() {
 
                         <div className="space-y-6">
                             {[
-                                { icon: 'envelope-simple', title: 'Email Me', value: 'hello@siyam.dev', color: 'primary' },
-                                { icon: 'phone-call', title: 'Call Me', value: '+880 1234 567 890', color: 'secondary' },
-                                { icon: 'map-pin', title: 'Location', value: 'Dhaka, Bangladesh', color: 'green' }
+                                { icon: 'envelope-simple', title: 'Email Me', value: 'hello@siyam.dev', iconClass: 'bg-primary/20 text-primary' },
+                                { icon: 'phone-call', title: 'Call Me', value: '+880 1234 567 890', iconClass: 'bg-secondary/20 text-secondary' },
+                                { icon: 'map-pin', title: 'Location', value: 'Dhaka, Bangladesh', iconClass: 'bg-green-500/20 text-green-400' }
                             ].map((item, idx) => (
                                 <div key={idx} className="glass-card p-6 rounded-xl flex items-center gap-5">
-                                    <div className={`w-12 h-12 rounded-full bg-${item.color === 'green' ? 'green-500' : item.color}/20 text-${item.color === 'green' ? 'green-400' : item.color} flex items-center justify-center text-2xl`}>
+                                    <div className={`w-12 h-12 rounded-full ${item.iconClass} flex items-center justify-center text-2xl`}>
                                         <i className={`ph-fill ph-${item.icon}`}></i>
                                     </div>
                                     <div>
