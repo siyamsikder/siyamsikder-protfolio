@@ -1,0 +1,68 @@
+[
+  {
+    "title": "School Management",
+    "subtitle": "Team Project - Education Platform",
+    "category": "Full-Stack (Team)",
+    "date": "25 Mar 2026",
+    "tags": [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Next.js"
+    ],
+    "desc": "A powerful school management system with role-based dashboards, secure payments, and database statistics.",
+    "live": "https://school-management-ruby-omega.vercel.app/",
+    "client": "https://github.com/ShahriarRefat0/School-management",
+    "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "title": "LifeNotes",
+    "subtitle": "Capture Your Life Lessons, Simply",
+    "category": "Full-Stack",
+    "date": "10 Sep 2024",
+    "tags": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ],
+    "desc": "A full-stack web application to capture, store, and manage personal life lessons.",
+    "live": "https://life-notes.netlify.app",
+    "client": "https://github.com/siyamsikder/digital-life-lessons-client",
+    "server": "https://github.com/siyamsikder/petnest-server-side",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "title": "ItemSphere",
+    "subtitle": "Full Stack Marketplace App",
+    "category": "E-commerce",
+    "date": "15 Dec 2023",
+    "tags": [
+      "React",
+      "Next.js",
+      "Node.js",
+      "MongoDB"
+    ],
+    "desc": "A responsive marketplace UI with clean layout and modern styling.",
+    "live": "https://itemsphere-nextjs-app-p42t.vercel.app",
+    "client": "https://github.com/siyamsikder/itemsphere-nextjs-app",
+    "image": "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=600&auto=format&fit=crop"
+  },
+  {
+    "title": "PetNest",
+    "subtitle": "Pet Adoption Platform",
+    "category": "Full-Stack",
+    "date": "5 Jan 2024",
+    "tags": [
+      "React",
+      "Express",
+      "MongoDB",
+      "JWT"
+    ],
+    "desc": "Pet adoption and care platform with JWT-based authentication and RBAC.",
+    "live": "https://petnest-d457a1.netlify.app",
+    "client": "https://github.com/siyamsikder/petnest-client-side",
+    "server": "https://github.com/siyamsikder/digital-life-lessons-server",
+    "image": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?q=80&w=600&auto=format&fit=crop"
+  }
+]

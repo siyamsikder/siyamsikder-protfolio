@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #121212;
+  --bg-card: #1a1a1a;
+  --bg-card-hover: #222222;
+  --border: rgba(255, 255, 255, 0.05);
+  --accent-yellow: #f5b331;
+  --accent-magenta: #ff00ff;
+  --accent-green: #00ff00;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-primary);
+  color: #eeeeee;
+  font-family: var(--font-inter), 'Inter', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-yellow); }
+
+/* Selection */
+::selection {
+  background: rgba(245, 179, 49, 0.2);
+  color: var(--accent-yellow);
+}
+
+/* Base card styling (if still used) */
+.card-base {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
